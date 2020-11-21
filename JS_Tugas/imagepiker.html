@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <select onchange="option();" id="listgambar">
+        <option value="https://4.bp.blogspot.com/-dPe6uU87SkE/VvvkjyQVcQI/AAAAAAAAHkg/wT65uKlDwMcstWRzpltcAVHA8lGUilyzA/s1600/Bungou.Stray.Dogs.full.1959015.jpg" >Bungou Stray Dog </option>
+        <option value="https://img5.goodfon.com/wallpaper/nbig/4/5b/bungou-stray-dogs-brodiachie-psy-literaturnye-genii-paren-11.jpg">Dazai</option>
+        <option value="https://static3.cbrimages.com/wordpress/wp-content/uploads/2020/05/Atsushi-Nakajima-Sighing-Bungo-Stray-Dogs.jpg?q=50&fit=crop&w=740&h=370">Atsushi</option>
+        <option value="https://randomc.net/image/Bungou%20Stray%20Dogs/Bungou%20Stray%20Dogs%20-%2022%20-%20Large%2001.jpg">Ranpo</option>
+        <option value="https://honeysanime.com/wp-content/uploads/2016/01/bungo-stray-dogs-kenji-miyazawa-225x350.png">Kenji</option>
+        <option value="https://i.pinimg.com/originals/eb/82/4b/eb824bb39f8ef5a4e38f769314ad84d3.jpg">Chuya</option>
+    </select>
+    <br/>
+	<img src="https://4.bp.blogspot.com/-dPe6uU87SkE/VvvkjyQVcQI/AAAAAAAAHkg/wT65uKlDwMcstWRzpltcAVHA8lGUilyzA/s1600/Bungou.Stray.Dogs.full.1959015.jpg" style="width: 100%" id="gambar">
+</body>
+    <script type="text/javascript">
+	    function option() {
+            let gambar = document.getElementById("listgambar").value;
+            document.getElementById("gambar").src = gambar;
+            alert("Link : " + gambar);
+	    }
+    </script>
+</html>
